@@ -3,10 +3,41 @@
     #logo{
         display: flex;
         justify-content: center;
+        margin-top: 10%;
+        padding-top: 5%;
+        padding-bottom: 2%;
     }
-    input{
+    #search-box{
         display: flex;
         justify-content: center;
+        padding-bottom: 2%;
+    }
+    #top-nav-bar{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-basis:auto;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    #bottom-nav-bar{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-basis:auto;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        margin-top: 55%;
+        background-color: lightgray;
+    }
+    #link{
+        padding: 1%;
+    }
+    #buttons{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-basis: auto;
     }
 </style>
 
@@ -14,8 +45,25 @@
     
     <title>Welcome to my Google clone!</title> 
     <body>
+        <ul id="top-nav-bar">
+            <li id="link"><a href="#"></a>GMail</li>
+            <li id="link"><a href="#"></a>Images</li>
+            <li id="link"><a href="#"></a>Your Profile</li>    
+        </ul>
         <div id="logo"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"> </div>
-        <input>
-        <button>Search</button>   
+        <div id="search-box">
+            <input>
+        </div>
+        <div id="buttons">
+            <button>Search</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+        <footer>
+            <ul id="bottom-nav-bar">
+            <li id="link"><a href="#"></a>Settings</li>
+            <li id="link"><a href="#"></a>Privacy</li>
+            <li id="link"><a href="#"></a>Terms</li>    
+            </ul>
+        </footer>   
     </body> 
 </html>
